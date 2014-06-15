@@ -7,8 +7,8 @@ and open the template in the editor.
 <html>
     <head>
         
-        <link rel="stylesheet" type="text/css" href="menu.css">
-        <link rel="stylesheet" type="text/css" href="board.css">
+        <link rel="stylesheet" type="text/css" href="../css/menu.css">
+        <link rel="stylesheet" type="text/css" href="../css/board.css">
         
         <meta charset="UTF-8">
         <title>KANsimpleBAN-The simple way to manage projects</title>
@@ -16,7 +16,7 @@ and open the template in the editor.
     <body>
         <div id="header">
         <!-- Das Logo sowie Profilbild in Header -->
-        <img id="logo" src="Logo.png" width="350" height="100"/>
+        <img id="logo" src="../Logo.png" width="350" height="100"/>
         </div>
         <!-- Hier das Akkordeon Menü -->
         <nav>

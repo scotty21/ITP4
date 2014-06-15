@@ -16,7 +16,7 @@ and open the template in the editor.
     <body>
         <div id="header">
         <!-- Das Logo sowie Profilbild in Header -->
-        <img id="logo" src="Logo.png" width="350" height="100"/>
+        <img id="logo" src="../Logo.png" width="350" height="100"/>
         </div>
         <!-- Hier das Akkordeon Menü -->
         <nav>
