@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.06.2014, 11:46:03
+    Author     : Sam
+*/
+
+#content {
+	float: left;
+	width: 70%;
+	margin-left: 5%;
+	margin-top: 5em;
+}
+
+.docs {
+	display: inline-block;
+	width: 49%;
+	height: 20em;
+}
+
+#dragDropBox {
+	width: 25em;
+	height: 10em;
+	margin: auto;
+	border: 2px dashed;
+	border-radius: 30px;
+	text-align: center;
+}

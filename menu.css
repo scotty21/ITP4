@@ -1,0 +1,114 @@
+/*
+Stylesheet only for Menu
+*/
+/* 
+    Created on : 15.06.2014, 10:44:27
+    Author     : Sam
+*/
+
+/* Für responsive Positionierung */
+nav {
+    width: 15em;
+    margin-top: 5em;
+    margin-left: 3em;
+    float: left;
+}
+nav ul li {
+    float: none;
+}
+nav ul li ul {
+    position: relative;
+}
+
+/*Das Styling*/
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 1.5em;
+    
+ 
+    -moz-box-shadow: 2px 2px 2px #dfdfdf;
+    -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+    box-shadow: 2px 2px 2px #dfdfdf;
+ 
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+}
+nav ul:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+nav ul,nav ul li{
+    background-color: #FAFAFA;
+}
+nav ul li {
+    list-style: none;
+    border-bottom: 1px solid #DFDFDF
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 14px 34px 14px 34px;
+}
+nav ul li ul{
+    display: block;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+}
+nav ul li ul li{
+    float: none;
+    display: block;
+    border: none;
+}
+nav ul li ul li a {
+    padding-left: 44px;
+    color: #FAFAFA;
+}
+nav ul li ul li a:hover{
+    color: #333;
+    background-color: #FAFAFA !important;
+}
+
+/* Target funktion */
+
+nav ul li#home:target a, nav ul li#home:target > ul li a{
+    background-color: #6655bb;
+}
+nav ul li#kalender:target a, nav ul li#kalender:target > ul li a{
+    background-color: #6655bb;
+}
+nav ul li#projektverwaltung:target a, nav ul li#projektverwaltung:target > ul li a{
+    background-color: #6655bb;
+}
+nav ul li#stories:target a, nav ul li#stories:target > ul li a{
+    background-color: #6655bb;
+}
+nav ul li#dokumente:target a, nav ul li#dokumente:target > ul li a{
+    background-color: #6655bb;
+}
+nav ul li:target > a {
+    color: #FAFAFA;
+}
+
+/*Slide Animation */
+nav ul li ul{
+    max-height: 0px;
+    overflow: hidden;
+ 
+    -webkit-transition: max-height 0.3s ease-out;
+    -moz-transition: max-height 0.3s ease-out;
+    -o-transition: max-height 0.3s ease-out;
+    -ms-transition: max-height 0.3s ease-out;
+    transition: max-height 0.3s ease-out;
+}
+nav ul li:target > ul {
+    max-height: 200px;
+}
