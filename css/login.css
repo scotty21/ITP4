@@ -1,0 +1,14 @@
+#login{
+	height:170px;
+	width:350px;
+	margin:auto;
+	margin-top:160px;
+	border-radius:3%;
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:17px;
+        float: left;
+}
+#login table{
+	padding:45px;
+	margin:auto;
+}
