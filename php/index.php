@@ -7,16 +7,15 @@ and open the template in the editor.
 <html>
     
 
-        <link rel="stylesheet" type="text/css" href="menu.css">
-        <link rel="stylesheet" type="text/css" href="board.css">
-         <link rel="stylesheet" type="text/css" href="main.css">
-         <link rel="stylesheet" type="text/css" href="post.css">
+        <link rel="stylesheet" type="text/css" href="../css/menu.css">
+        <link rel="stylesheet" type="text/css" href="../css/board.css">
+         <link rel="stylesheet" type="text/css" href="../css/main.css">
+         <link rel="stylesheet" type="text/css" href="../css/post.css">
          
-<script language="javascript" type="text/javascript" src="postIts.js"></script>
+<script language="javascript" type="text/javascript" src="../js/postIts.js"></script>
         <meta charset="UTF-8">
         <title>KANsimpleBAN-The simple way to manage projects</title>
 
-<link rel="stylesheet" href="/resources/demos/style.css">
 
 </script>
 
@@ -24,13 +23,13 @@ and open the template in the editor.
     <body>
         <div id="header">
             <!-- Das Logo sowie Profilbild in Header -->
-            <img id="logo" src="Logo.png" width="350" height="100"/>
+            <img id="logo" src="../Logo.png" width="350" height="100"/>
         </div>
         <!-- Hier das Akkordeon Menü -->
         <nav>
             <ul>
                 <li id = "home">
-                    <a href="#home">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li id = "kalender">
                     <a href="#kalender">Kalender</a>
@@ -43,10 +42,10 @@ and open the template in the editor.
                     </ul>
                 </li>
                 <li id = "stories">
-                    <a href="#stories">Stories</a>
+                    <a href="stories.php">Stories</a>
                 </li>
                 <li id = "dokumente">
-                    <a href="#dokumente">Dokumente</a>
+                    <a href="documents.php">Dokumente</a>
                 </li>
             </ul>
         </nav>
