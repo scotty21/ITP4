@@ -1,14 +1,45 @@
+h1{
+    font-family: Arial;
+}
+
 #login{
-	height:170px;
-	width:350px;
-	margin:auto;
-	margin-top:160px;
+        width:460px;
+	height:100px;
+        position: absolute;
+        right: 10%;
+        top: 20px;
 	border-radius:3%;
 	font:Verdana, Arial, Helvetica, sans-serif;
 	font-size:17px;
         float: left;
 }
-#login table{
-	padding:45px;
-	margin:auto;
+
+#login form input{
+        padding:10px;
+        margin:5px;
 }
+
+#register{
+	height:300px;
+	width:450px;
+        position: absolute;
+        right: 20%;
+        top: 230px;
+	border-radius:3%;
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size:17px;
+        float: left;
+}
+
+#register form input{
+    padding:10px;
+    margin:5px;
+}
+
+#image {
+        position: absolute;
+        left: 8%;
+        top: 100px;
+}
+
+
