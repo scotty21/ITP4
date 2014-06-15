@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.06.2014, 11:46:03
+    Author     : Sam
+*/
+
+#content {
+    float: left;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 5em;
+    vertical-align: middle;
+}
+
+#left {
+    display: inline-block;
+    width: 49%;
+    height: 20em;
+    vertical-align: middle;
+}
+
+#selectProject {
+    border: none;
+
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    width: 60%;
+
+    /*  Style von menu  */
+    -moz-box-shadow: 2px 2px 2px #dfdfdf;
+    -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DFDFDF
+}
+
+#selctStory {
+    width: 60%;
+    height: 20em;
+    margin: auto;
+    overflow-y: scroll;
+
+    /*  Style von menu  */
+    -moz-box-shadow: 2px 2px 2px #dfdfdf;
+    -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+#storiesList {
+    list-style: none;
+    margin-left: 1em;
+    /*text-decoration: none;*/
+}
+
+#newStoryButton {
+    display: inline-block;
+    width: 25%;
+    padding: 0px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+
+    /*  Style von menu  */
+    -moz-box-shadow: 2px 2px 2px #dfdfdf;
+    -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DFDFDF
+}
+
+#newStoryButton a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 14px 34px 14px 34px;
+}
+#newStoryButton a:hover{
+    color: #8781BD;
+    background-color: #FAFAFA !important;
+}
