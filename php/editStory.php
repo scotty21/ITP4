@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
 
         <link rel="stylesheet" type="text/css" href="../css/menu.css">
-        <link rel="stylesheet" type ="text/css" href="../css/stories.css">
+        <link rel="stylesheet" type ="text/css" href="../css/editStory.css">
 
         <meta charset="UTF-8">
         <title>KANsimpleBAN-The simple way to manage projects</title>
@@ -35,7 +35,7 @@ and open the template in the editor.
                     </ul>
                 </li>
                 <li id = "stories">
-                    <a href="#stories">Stories</a>
+                    <a href="stories.php">Stories</a>
                 </li>
                 <li id = "dokumente">
                     <a href="documents.php">Dokumente</a>
@@ -43,26 +43,19 @@ and open the template in the editor.
             </ul>
         </nav>
         <div id = "content">
-            <div id = "left">
-                <div id="selctStory">
-                    <ul id = "storiesList">
-                        <li>
-                            <a href="editStory.php"> Userstory 1 - bla bla</a>
-                        </li>
-                        <li>
-                            <a href="editStory.php"> Userstory 2 - test</a>
-                        </li>
-                    </ul>
-                </div>
-                <select id="selectProject">
-                    <option value="0">Testprojekt</option>
-                    <option value="1">Projekt 1</option>
-                    <option value="2">Projekt 2</option>
-                </select>
-            </div>
-
-            <div id = "newStoryButton">
-                <a href="editStory.php">neue Story anlegen</a>
+            <div id="left">
+                <input type="text" id="storyTitle" class="borderSyle" placeholder="Userstory Titel">
+                <div id="storyDescription" class="borderSyle">                
+                    <textarea id="description" placeholder="Beschreibung der Userstory einfügen"></textarea>
+                </div>                
+                <div id="buttons">                
+                    <div id="storyDelete" class="buttonStyle borderSyle">
+                        <a href="#">Story löschen</a>
+                    </div>
+                    <div id="storySave" class="buttonStyle borderSyle">
+                        <a href="#">Story speichern</a>
+                    </div>
+                </div>            
             </div>
         </div>
 </html>

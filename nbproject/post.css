@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.06.2014, 16:22:07
+    Author     : Sam
+*/
+
+#postIt {
+    border: 1px solid black;
+    background-color: yellow; 
+    width: 5em;
+    height: 5em;
+    padding: 0.5em;
+}

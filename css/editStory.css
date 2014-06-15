@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.06.2014, 11:46:03
+    Author     : Sam
+*/
+
+#content {
+    float: left;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 5em;
+    vertical-align: middle;
+}
+
+#left {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+/*    height: 20em;*/
+    /*vertical-align: middle;*/
+}
+
+#storyTitle {
+    color: #8781BD;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    width: 60%;
+}
+#storyDescription {
+    width: 60%;
+    height: 20em;
+    margin: auto;
+    /*overflow-y: scroll;*/
+
+    /*  Style von menu  */
+}
+
+#storyDescription textarea {
+    background-color: #FAFAFA;
+    border: none;
+    resize: none;
+    width: 99%;
+    height: 99%;
+}
+
+#buttons {
+    text-align: center;
+    margin: 1em;
+}
+
+#storyDelete {
+    display: inline-block;
+    /*width: 25%;*/
+    padding: 0px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#storySave {
+    display: inline-block;
+    /*width: 25%;*/
+    padding: 0px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.buttonStyle a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 14px 34px 14px 34px;
+}
+.buttonStyle a:hover{
+    color: #8781BD;
+    background-color: #FAFAFA !important;
+}
+
+.borderSyle {
+    border: none;
+    /*  Style von menu  */
+    -moz-box-shadow: 2px 2px 2px #dfdfdf;
+    -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DFDFDF    
+}
