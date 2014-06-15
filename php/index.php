@@ -20,7 +20,7 @@ and open the template in the editor.
         <nav>
             <ul>
                 <li id = "home">
-                    <a href="#home">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li id = "kalender">
                     <a href="#kalender">Kalender</a>
