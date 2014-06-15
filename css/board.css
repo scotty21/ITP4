@@ -8,11 +8,45 @@ and open the template in the editor.
     Author     : Sam
 */
 
-canvas {
-    border: 1px solid black;
+#board {
+    //border: 1px solid #000000;
     float: left;
-    height: 40em;
-    margin-left: 5%;
-    width: 70%;
+    height: auto;
+    margin-left: 3%;
+    width: 75%;
+    
  
+    
+   // -moz-box-shadow: 2px 2px 2px #dfdfdf;
+   // -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+   // box-shadow: 2px 2px 2px #dfdfdf;
+ 
+   // border-right: 1px solid #DFDFDF;
+  //  border-bottom: 1px solid #DFDFDF;
+    //background-color: #8781BD;
+ 
+}
+
+.table{
+ //border: 1px solid black;
+    float: left;
+    height: 33em;
+    margin: 0.2%;
+    padding: 1.5%;
+    width: 16%;
+    position: inherit;
+    text-align: center;
+    font-weight: bold;
+   // background-color: #8781BD;
+   color: black;
+   background-image: -webkit-linear-gradient(white 50%, #8781BD 0%); 
+    background-image: -moz-linear-gradient(white 50%, #8781BD 0%); 
+    background-image: -o-linear-gradient(white 50%, #8781BD 0%); 
+    background-image: linear-gradient( #8781BD 0%, white 15%);
+    
+    border: 1px solid #DFDFDF;
+   // border-bottom: 1px solid #DFDFDF;
+    
+     box-shadow: 2px 2px 2px #dfdfdf;
+    
 }

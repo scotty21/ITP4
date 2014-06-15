@@ -80,19 +80,19 @@ nav ul li ul li a:hover{
 /* Target funktion */
 
 nav ul li#home:target a, nav ul li#home:target > ul li a{
-    background-color: #6655bb;
+    background-color: #8781BD;
 }
 nav ul li#kalender:target a, nav ul li#kalender:target > ul li a{
-    background-color: #6655bb;
+    background-color: #8781BD;
 }
 nav ul li#projektverwaltung:target a, nav ul li#projektverwaltung:target > ul li a{
-    background-color: #6655bb;
+    background-color: #8781BD;
 }
 nav ul li#stories:target a, nav ul li#stories:target > ul li a{
-    background-color: #6655bb;
+    background-color: #8781BD;
 }
 nav ul li#dokumente:target a, nav ul li#dokumente:target > ul li a{
-    background-color: #6655bb;
+    background-color: #8781BD;
 }
 nav ul li:target > a {
     color: #FAFAFA;
