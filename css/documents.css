@@ -25,7 +25,36 @@ and open the template in the editor.
 	width: 25em;
 	height: 10em;
 	margin: auto;
-	border: 2px dashed;
+	border: 2px dashed #333;
 	border-radius: 30px;
 	text-align: center;
+    background-color: #FAFAFA;
+    color: #333;
+}
+
+#dropWrapper {
+    width: 25em;
+    margin: auto;
+}
+#dragDropBox.hover {
+    border: 10px dashed #8781BD;
+}
+#dragDropBox p { 
+    margin: 10px; 
+    font-size: 14px; 
+}
+
+progress { 
+    width: 100%;
+}
+progress:after {
+    content: '%'; 
+}
+.fail { 
+    background: #c00; 
+    padding: 2px; 
+    color: #fff; 
+}
+.hidden { 
+    display: none !important;
 }
