@@ -7,8 +7,8 @@ and open the template in the editor.
 <html>
     <head>
         
-        <link rel="stylesheet" type="text/css" href="menu.css">
-        <link rel="stylesheet" type="text/css" href="documents.css">
+        <link rel="stylesheet" type="text/css" href="../css/menu.css">
+        <link rel="stylesheet" type ="text/css" href="../css/documents.css">
         
         <meta charset="UTF-8">
         <title>KANsimpleBAN-The simple way to manage projects</title>
