@@ -8,14 +8,16 @@ and open the template in the editor.
     <head>
 
         <link rel="stylesheet" type="text/css" href="../css/menu.css">
-        <link rel="stylesheet" type="text/css" href="../css/board.css">
+        <link rel="stylesheet" type ="text/css" href="../css/stories.css">
 
         <meta charset="UTF-8">
         <title>KANsimpleBAN-The simple way to manage projects</title>
     </head>
     <body>
         <div id="header">
-            <img id="logo" src="../Logo.png" width="350" height="100"/>        </div>
+            <!-- Das Logo sowie Profilbild in Header -->
+            <img id="logo" src="../Logo.png" width="350" height="100"/>
+        </div>
         <!-- Hier das Akkordeon Menü -->
         <nav>
             <ul>
@@ -33,25 +35,34 @@ and open the template in the editor.
                     </ul>
                 </li>
                 <li id = "stories">
-                    <a href="stories.php">Stories</a>
-                    <ul>
-                        <li id = "packages"> 
-                            <a href="#packages">Arbeitspakete</a>
-                        </li>
-                    </ul>
+                    <a href="#stories">Stories</a>
                 </li>
                 <li id = "dokumente">
                     <a href="documents.php">Dokumente</a>
                 </li>
             </ul>
         </nav>
-        <!-- Hier das Board -->
+        <div id = "content">
+            <div id = "left">
+                <div id="selctStory">
+                    <ul id = "storiesList">
+                        <li>
+                            <a href="#"> Userstory 1 - bla bla</a>
+                        </li>
+                        <li>
+                            <a href="#"> Userstory 2 - test</a>
+                        </li>
+                    </ul>
+                </div>
+                <select id="selectProject">
+                    <option value="0">Testprojekt</option>
+                    <option value="1">Projekt 1</option>
+                    <option value="2">Projekt 2</option>
+                </select>
+            </div>
 
-        <canvas id="board"
-    </canvas>
-</div>        <?php
-// class_implements($kanBoard, $autoload);
-//Wollte alles dann in Klassen packen, aber is ja jetzt erstmal wurscht^^
-?>
-</body>
+            <div id = "newStoryButton">
+                <a href="#">neue Story anlegen</a>
+            </div>
+        </div>
 </html>
