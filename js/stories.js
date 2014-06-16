@@ -11,6 +11,9 @@ $(document).ready(function() {
 
 function getStories() {
     var selected =   $('#selectProject').val();
+    if(selected === null) {
+        return;
+    }
 //    alert(selected);
     $.ajax({
         url:        '../php/db/getStories.php',
@@ -19,7 +22,7 @@ function getStories() {
         success:    function(data) {
 //            alert(data);
             $('#storiesList').html(data);
-            $('#newStoryButton').html("<a href=\"editStory.php?action=new&p="+selected+"\">neue Story anlegen</a>");
+            $('#newStoryButton').html("<a href=\"editStory.php?action=new&p="+selected+"\">neue Story anlegen</a>");                
         }
     });
 }

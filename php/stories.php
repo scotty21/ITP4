@@ -58,6 +58,9 @@ and open the template in the editor.
             <div id = "left">
                 <div id="selctStory">
                     <ul id = "storiesList">
+                    </ul>
+                </div>
+                <select id="selectProject" onchange="getStories()">
                         <?php 
                             include_once('./db/dbhandler.php');
                             $db = new Database();
@@ -67,18 +70,6 @@ and open the template in the editor.
                             $userId = $result[0]['ID'];
 //                            echo 'userId: '.$userId;
                             $userProjects = $db->Query("SELECT projectID FROM `user_project` WHERE `userID`=?;", 's', $userId);
-                            $defaultProject = $userProjects[0]['projectID'];
-                            $stories = $db->Query("SELECT * FROM `story` WHERE `projectID`=?;", 's', $defaultProject);
-//                            $db->Close();
-                            foreach ($stories as $story) {
-//                                print_r($story);
-                                echo '<li class="buttonStyle"><a href="editStory.php?action=edit&id='.$story['ID'].'">'.$story['title'].'</a></li>';
-                            }
-                        ?>
-                    </ul>
-                </div>
-                <select id="selectProject" onchange="getStories()">
-                        <?php 
                             foreach ($userProjects as $up) {
                                 $project = $db->Query("SELECT * FROM `project` WHERE `ID`=?;", 's', $up['projectID']);
                                 echo '<option value="'.$project[0]['ID'].'">'.$project[0]['Projectname'].'</option>';
@@ -89,7 +80,7 @@ and open the template in the editor.
             </div>
 
             <div id = "newStoryButton" class="buttonStyle borderStyle">
-                <a href="editStory.php">neue Story anlegen</a>
+                <a href="">neue Story anlegen</a>
             </div>
         </div>
 </html>
