@@ -59,7 +59,8 @@ and open the template in the editor.
 
 #storiesList {
     list-style: none;
-    margin-left: 1em;
+    padding-left: 0;
+    font-weight: bold;
     /*text-decoration: none;*/
 }
 
@@ -70,7 +71,21 @@ and open the template in the editor.
     margin: auto;
     text-align: center;
     font-size: 1.5em;
+}
 
+.buttonStyle a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 14px 34px 14px 34px;
+}
+.buttonStyle a:hover{
+    color: #8781BD;
+    background-color: #FAFAFA !important;
+}
+
+.borderStyle {
+    border: none;
     /*  Style von menu  */
     -moz-box-shadow: 2px 2px 2px #dfdfdf;
     -webkit-box-shadow: 2px 2px 2px #dfdfdf;
@@ -78,16 +93,5 @@ and open the template in the editor.
     border-right: 1px solid #DFDFDF;
     border-bottom: 1px solid #DFDFDF;
     background-color: #FAFAFA;
-    border-bottom: 1px solid #DFDFDF
-}
-
-#newStoryButton a {
-    text-decoration: none;
-    display: block;
-    color: #333;
-    padding: 14px 34px 14px 34px;
-}
-#newStoryButton a:hover{
-    color: #8781BD;
-    background-color: #FAFAFA !important;
+    border-bottom: 1px solid #DFDFDF    
 }
