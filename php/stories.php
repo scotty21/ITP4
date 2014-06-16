@@ -72,7 +72,7 @@ and open the template in the editor.
 //                            $db->Close();
                             foreach ($stories as $story) {
 //                                print_r($story);
-                                echo '<li class="buttonStyle"><a href="editStory.php?'.$story['ID'].'">'.$story['title'].'</a></li>';
+                                echo '<li class="buttonStyle"><a href="editStory.php?action=edit&id='.$story['ID'].'">'.$story['title'].'</a></li>';
                             }
                         ?>
                     </ul>

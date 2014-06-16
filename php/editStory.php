@@ -9,7 +9,8 @@ and open the template in the editor.
 
         <link rel="stylesheet" type="text/css" href="../css/menu.css">
         <link rel="stylesheet" type ="text/css" href="../css/editStory.css">
-
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/editStory.js"></script>
         <meta charset="UTF-8">
         <title>KANsimpleBAN-The simple way to manage projects</title>
     </head>
@@ -55,16 +56,39 @@ and open the template in the editor.
         </nav>
         <div id = "content">
             <div id="left">
-                <input type="text" id="storyTitle" class="borderStyle" placeholder="Userstory Titel">
-                <div id="storyDescription" class="borderStyle">                
-                    <textarea id="description" placeholder="Beschreibung der Userstory einfügen"></textarea>
+                <?php
+//                        print_r($_GET);
+                    if(isset($_GET['id'])) {
+                        include_once('./db/dbhandler.php');
+                        $db = new Database();
+                        $db->Connect();
+                        $story = $db->Query("SELECT * FROM `story` WHERE `ID` = ?;", 's', $_GET['id']);
+                        $db->Close();
+                        echo '<input type="text" id="storyTitle" class="borderStyle" placeholder="Userstory Titel" value="'.$story[0]['title'].'">';
+                    } else {
+                        echo '<input type="text" id="storyTitle" class="borderStyle" placeholder="Userstory Titel">';
+                    }
+                ?>
+                <div id="storyDescription" class="borderStyle">
+                    <?php
+                        if(isset($_GET['id'])) {
+                            echo '<textarea id="description" placeholder="Beschreibung der Userstory einfügen" >'.$story[0]['description'].'</textarea>';
+                        } else {
+                            echo '<textarea id="description" placeholder="Beschreibung der Userstory einfügen" ></textarea>';
+                        }
+                    ?>
+                    
                 </div>                
-                <div id="buttons">                
-                    <div id="storyDelete" class="buttonStyle borderStyle">
-                        <a href="#">Story löschen</a>
-                    </div>
+                <div id="buttons">
+                    <?php
+                        if(isset($_GET['id'])) {
+                            echo '<div id="storyDelete" class="buttonStyle borderStyle">
+                                <a href="#" onclick="deleteStory('.$story[0]['ID'].')">Story löschen</a>
+                            </div>';
+                        }
+                    ?>
                     <div id="storySave" class="buttonStyle borderStyle">
-                        <a href="#">Story speichern</a>
+                        <a onclick="saveStory()" href="#">Story speichern</a>
                     </div>
                 </div>            
             </div>

@@ -17,5 +17,5 @@ $db->Connect();
 $stories = $db->Query('SELECT * from `story` WHERE `projectID`=?;', 's', $value);
 $db->Close();
 foreach ($stories as $story) {
-    echo '<li class="buttonStyle"><a href="editStory.php?' . $story['ID'] . '">' . $story['title'] . '</a></li>';
+    echo '<li class="buttonStyle"><a href="editStory.php?action=edit&id=' . $story['ID'] . '">' . $story['title'] . '</a></li>';
 }

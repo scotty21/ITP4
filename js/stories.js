@@ -19,6 +19,7 @@ function getStories() {
         success:    function(data) {
 //            alert(data);
             $('#storiesList').html(data);
+            $('#newStoryButton').html("<a href=\"editStory.php?action=new&p="+selected+"\">neue Story anlegen</a>");
         }
     });
 }
