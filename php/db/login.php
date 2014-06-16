@@ -3,7 +3,7 @@
 session_start();
 $_SESSION["status"] = array();
 
-if (!isset($_POST['uid']) && !isset($_POST["pw"])) {
+if (!isset($_SESSION["uid"]) && !isset($_POST["pw"])) {
 	$_SESSION["status"] = 0;
 	header('Location:../start.php');
 }
