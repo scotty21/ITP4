@@ -8,15 +8,20 @@ and open the template in the editor.
     Author     : Sam
 */
 
-#main {
-  //  border: 2px black dotted;
-   // width: auto;
-   // height: auto;
+#user{
     
-    
+    position: absolute;
+    right: 10%;
+    top: 20px;
+    font-family: Arial;
+    font-size:17px;
+    float: left;
+}
+#user button {
+    top:2px;
+    left:10px;
+    float: left;
     
 }
 
-#header{
-   // border: 2px black solid;
-}
+
