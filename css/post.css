@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Sam
 */
 
-#postIt {
+.postIt {
     border: 1px solid black;
     background-color: yellow; 
     width: 5em;

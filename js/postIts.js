@@ -28,10 +28,14 @@ function dragDrop(ev) {
    ev.stopPropagation();
    return false;
 }
-
-function popup() {
+ var $id=0;
+function popup($id) {
+    
+    if($id<=10){
 	popup = document.createElement("div");
-	popup.setAttribute("id","postIt", "style", "width: 200px; height: 200px; background-color: black;", 0);
-	popup.innerHTML = "";
+	popup.setAttribute("id","post", "style","border: 1px solid black;background-color: yellow;width: 5em;height: 5em;");
+	popup.innerHTML = "1";
 	document.body.appendChild(popup);
+    }
+    $id++;
 }

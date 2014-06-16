@@ -105,7 +105,7 @@ and open the template in the editor.
         </div>
         <button id="newPost" type="button" onclick="popup();">Neue Aufgabe hinzufügen
       </button> 
-       <div id="postIt" draggable="true" ondragstart="return dragStart(event)">
+       <div id="post" class="postIt" draggable="true" ondragstart="return dragStart(event)">
            
         </div>
     </body>
