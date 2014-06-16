@@ -9,25 +9,42 @@ and open the template in the editor.
 */
 
 #content {
-	float: left;
-	width: 70%;
-	margin-left: 5%;
-	margin-top: 5em;
+    float: left;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 5em;
 }
 
 .docs {
-	display: inline-block;
-	width: 49%;
-	height: 20em;
+    display: inline-block;
+    width: 49%;
+    height: 20em;
+    vertical-align: top;
+    overflow-y: auto;
+}
+
+.docs ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.docs li {
+    font-weight: bold;
+    color: #333;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: #8781BD;
 }
 
 #dragDropBox {
-	width: 25em;
-	height: 10em;
-	margin: auto;
-	border: 2px dashed #333;
-	border-radius: 30px;
-	text-align: center;
+    width: 25em;
+    height: 10em;
+    margin: auto;
+    border: 2px dashed #333;
+    border-radius: 30px;
+    text-align: center;
     background-color: #FAFAFA;
     color: #333;
 }
@@ -57,4 +74,28 @@ progress:after {
 }
 .hidden { 
     display: none !important;
+}
+
+
+.buttonStyle a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 14px 34px 14px 34px;
+}
+.buttonStyle a:hover{
+    color: #8781BD;
+    background-color: #FAFAFA !important;
+}
+
+.borderStyle {
+    border: none;
+    /*  Style von menu  */
+    -moz-box-shadow: 2px 2px 2px #dfdfdf;
+    -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DFDFDF    
 }

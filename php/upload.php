@@ -11,6 +11,9 @@ if (isset($_FILES['userfile'])) {
     $fileupload = $_FILES['userfile'];
     if ($_FILES['userfile']['type'] == "image/gif"
             or $_FILES['userfile']['type'] == "image/png"
+            or $_FILES['userfile']['type'] == "application/pdf"
+            or $_FILES['userfile']['type'] == "text/plain"
+            or $_FILES['userfile']['type'] == "application/zip, application/x-compressed-zip"
             or $_FILES['userfile']['type'] == "image/jpeg") {
 
         if (!$fileupload['error'] && $fileupload['size'] > 0 && $fileupload['tmp_name'] && is_uploaded_file($fileupload['tmp_name'])) {
@@ -20,3 +23,4 @@ if (isset($_FILES['userfile'])) {
         }
     }
 }
+

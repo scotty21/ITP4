@@ -81,7 +81,7 @@ and open the template in the editor.
     background-color: #FAFAFA !important;
 }
 
-.borderSyle {
+.borderStyle {
     border: none;
     /*  Style von menu  */
     -moz-box-shadow: 2px 2px 2px #dfdfdf;
