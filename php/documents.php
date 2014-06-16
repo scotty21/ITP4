@@ -18,6 +18,17 @@ and open the template in the editor.
             <!-- Das Logo sowie Profilbild in Header -->
             <img id="logo" src="../Logo.png" width="350" height="100"/>
         </div>
+        <div id="user">
+        <?php
+            session_start();
+            if (isset($_SESSION['user']['uid'])) {
+            echo $_SESSION['user']['uid'] ;
+            }
+	?>
+        <div id="button">
+            <a href="db/logout.php"  method="post" target="_parent"><img src="../logout_button.png"></a>
+        </div>
+        </div>
         <!-- Hier das Akkordeon Menü -->
         <nav>
             <ul>

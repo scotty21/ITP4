@@ -10,7 +10,7 @@ and open the template in the editor.
 
         <link rel="stylesheet" type="text/css" href="../css/menu.css">
         <link rel="stylesheet" type="text/css" href="../css/board.css">
-         <link rel="stylesheet" type="text/css" href="../css/main.css">
+         //<link rel="stylesheet" type="text/css" href="../css/main.css">
          <link rel="stylesheet" type="text/css" href="../css/post.css">
          
 <script language="javascript" type="text/javascript" src="../js/postIts.js"></script>
