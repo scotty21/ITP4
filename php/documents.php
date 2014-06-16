@@ -25,7 +25,7 @@ and open the template in the editor.
                     <a href="index.php">Home</a>
                 </li>
                 <li id = "kalender">
-                    <a href="#kalender">Kalender</a>
+                    <a href="calender.php">Kalender</a>
                 </li>
                 <li id = "projektverwaltung">
                     <a href="#projektverwaltung">Projektverwaltung</a>

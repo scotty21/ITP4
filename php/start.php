@@ -13,7 +13,6 @@
                     <input type="text" name="uid" placeholder="E-Mail" style="width:170px;">
                     <input type="password" name="pw" placeholder="Passwort">
                     <input type="submit" value="Login" />
-                </div>
             </form>
          </div>
          </div>
