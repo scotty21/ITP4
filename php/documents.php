@@ -61,7 +61,7 @@ and open the template in the editor.
                         <?php
                             $files = scandir("../files/default"); 
                             for ($i =  2; $i <  sizeof ($files); $i++) {
-                                echo '<li class = "buttonStyle"><a href="../files/default/' . $files[$i] . '">' . $files[$i] . '</a></li>';
+                                echo '<li class = "buttonStyle"><a href="../files/default/' . $files[$i] . '" download>' . $files[$i] . '</a></li>';
                             }
                         ?>  
                     </ul>
@@ -74,7 +74,7 @@ and open the template in the editor.
                         <?php
                             $files = scandir("../files/userfiles/docs");
                             for ($i = 2; $i < sizeof ( $files ); $i++) {
-                                echo '<li class = "buttonStyle"><a href="../files/userfiles/docs/' . $files[$i] . '">' . $files[$i] . '</a></li>';
+                                echo '<li class = "buttonStyle"><a href="../files/userfiles/docs/' . $files[$i] . '" download>' . $files[$i] . '</a></li>';
                             }
                         ?>  
                     </ul>
