@@ -28,3 +28,10 @@ function dragDrop(ev) {
    ev.stopPropagation();
    return false;
 }
+
+function popup() {
+	popup = document.createElement("div");
+	popup.setAttribute("id","postIt", "style", "width: 200px; height: 200px; background-color: black;", 0);
+	popup.innerHTML = "";
+	document.body.appendChild(popup);
+}

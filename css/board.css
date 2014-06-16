@@ -50,3 +50,14 @@ and open the template in the editor.
      box-shadow: 2px 2px 2px #dfdfdf;
     
 }
+
+#projects {
+    position: inherit;
+    margin-left: 3.2%;
+}
+
+#newPost {
+  float: left;
+    margin-left: 18.3%;
+    margin-top: 1%;
+}

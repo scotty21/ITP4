@@ -17,6 +17,7 @@ and open the template in the editor.
          <link rel="stylesheet" type="text/css" href="../css/post.css">
          
 <script language="javascript" type="text/javascript" src="../js/postIts.js"></script>
+
         <meta charset="UTF-8">
         <title>KANsimpleBAN-The simple way to manage projects</title>
 
@@ -33,7 +34,7 @@ and open the template in the editor.
         <nav>
             <ul>
                 <li id = "home">
-                    <a href="index.php">Home</a>
+                    <a href="#index.php">Home</a>
                 </li>
                 <li id = "kalender">
                     <a href="calender.php">Kalender</a>
@@ -54,6 +55,12 @@ and open the template in the editor.
             </ul>
         </nav>
         <!-- Hier das Board -->
+        
+          <select id="projects" name="mydropdown">
+            <option value="project1">Projektname 1</option>
+            <option value="project2">Projektname 2</option>
+            <option value="project3">Projektname 3</option>
+            </select>
 
         <div id="board">
             <div id="input" class="table" ondragenter="return dragEnter(event)" 
@@ -88,20 +95,10 @@ and open the template in the editor.
                 <hr>
             </div>
         </div>
-        <div id="postIt" draggable="true" ondragstart="return dragStart(event)">
+        <button id="newPost" type="button" onclick="popup();">Neue Aufgabe hinzufügen
+      </button> 
+       <div id="postIt" draggable="true" ondragstart="return dragStart(event)">
            
         </div>
-        <?php
-        // class_implements($kanBoard, $autoload);
-        //Wollte alles dann in Klassen packen, aber is ja jetzt erstmal wurscht^^
-        ?>
-        
-     
-            
-            <select name="mydropdown">
-            <option value="project1">Projektname 1</option>
-            <option value="project2">Projektname 2</option>
-            <option value="project3">Projektname 3</option>
-            </select>
     </body>
 </html>

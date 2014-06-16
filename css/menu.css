@@ -79,36 +79,24 @@ nav ul li ul li a:hover{
 
 /* Target funktion */
 
-nav ul li#home:target a, nav ul li#home:target > ul li a{
+nav ul li#home:active a, nav ul li#home:active > ul li a{
     background-color: #8781BD;
+    color: #FAFAFA;
 }
-nav ul li#kalender:target a, nav ul li#kalender:target > ul li a{
+nav ul li#kalender:active a, nav ul li#kalender:active > ul li a{
     background-color: #8781BD;
+    color: #FAFAFA;
 }
-nav ul li#projektverwaltung:target a, nav ul li#projektverwaltung:target > ul li a{
+nav ul li#projektverwaltung:active a, nav ul li#projektverwaltung:active > ul li a{
     background-color: #8781BD;
+    color: #FAFAFA;
 }
-nav ul li#stories:target a, nav ul li#stories:target > ul li a{
+nav ul li#stories:active a, nav ul li#stories:active > ul li a{
     background-color: #8781BD;
+    color: #FAFAFA;
 }
-nav ul li#dokumente:target a, nav ul li#dokumente:target > ul li a{
+nav ul li#dokumente:active a, nav ul li#dokumente:active > ul li a{
     background-color: #8781BD;
-}
-nav ul li:target > a {
     color: #FAFAFA;
 }
 
-/*Slide Animation */
-nav ul li ul{
-    max-height: 0px;
-    overflow: hidden;
- 
-    -webkit-transition: max-height 0.3s ease-out;
-    -moz-transition: max-height 0.3s ease-out;
-    -o-transition: max-height 0.3s ease-out;
-    -ms-transition: max-height 0.3s ease-out;
-    transition: max-height 0.3s ease-out;
-}
-nav ul li:target > ul {
-    max-height: 200px;
-}
