@@ -18,6 +18,17 @@ and open the template in the editor.
             <!-- Das Logo sowie Profilbild in Header -->
             <img id="logo" src="../Logo.png" width="350" height="100"/>
         </div>
+        <div id="user">
+        <?php
+            session_start();
+            if (isset($_SESSION['user']['uid'])) {
+            echo $_SESSION['user']['uid'] ;
+            }
+	?>
+        <div id="button">
+            <a href="db/logout.php"  method="post" target="_parent"><img src="../logout_button.png"></a>
+        </div>
+        </div>
         <!-- Hier das Akkordeon Menü -->
         <nav>
             <ul>
@@ -44,31 +55,28 @@ and open the template in the editor.
         </nav>
         <div id = "content">
             <div class = "docs">
-                <div class="title">Vorlagen</div>
+                <h2>Vorlagen</h2>
                 <div id="defaultDocs">
                     <ul>
-<?php 
-                    $files = scandir("../files/default");
-                    for($i = 2; $i < sizeof($files); $i++)
-                    {
-                        echo '<li>'.$files[$i].'</li>';
-                    }
-
-?>  
+                        <?php
+                            $files = scandir("../files/default"); 
+                            for ($i =  2; $i <  sizeof ($files); $i++) {
+                                echo '<li class = "buttonStyle"><a href="../files/default/' . $files[$i] . '">' . $files[$i] . '</a></li>';
+                            }
+                        ?>  
                     </ul>
-                </div>            </div>
+                </div>            
+            </div>
             <div class = "docs">
-                <div class="title">Meine Dokumente</div>
+                <h2>Meine Dokumente</h2>
                 <div id="userDocs">
                     <ul>
-<?php 
-                    $files = scandir("../files/userfiles/docs");
-                    for($i = 2; $i < sizeof($files); $i++)
-                    {
-                        echo '<li>'.$files[$i].'</li>';
-                    }
-
-?>  
+                        <?php
+                            $files = scandir("../files/userfiles/docs");
+                            for ($i = 2; $i < sizeof ( $files ); $i++) {
+                                echo '<li class = "buttonStyle"><a href="../files/userfiles/docs/' . $files[$i] . '">' . $files[$i] . '</a></li>';
+                            }
+                        ?>  
                     </ul>
                 </div>
             </div>
